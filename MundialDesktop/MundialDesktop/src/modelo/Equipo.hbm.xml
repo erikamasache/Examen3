@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/05/2014 02:15:53 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="modelo.Equipo" table="equipo" schema="public">
+        <id name="equipo" type="int">
+            <column name="equipo" />
+            <generator class="assigned" />
+        </id>
+        <property name="rankingfifa" type="java.lang.Integer">
+            <column name="rankingfifa" />
+        </property>
+        <property name="numerocopasganadas" type="java.lang.Integer">
+            <column name="numerocopasganadas" />
+        </property>
+        <property name="partidouno" type="java.lang.Integer">
+            <column name="partidouno" />
+        </property>
+        <property name="partidodos" type="java.lang.Integer">
+            <column name="partidodos" />
+        </property>
+        <property name="partidotres" type="java.lang.Integer">
+            <column name="partidotres" />
+        </property>
+        <property name="nombrepais" type="string">
+            <column name="nombrepais" length="50" />
+        </property>
+        <property name="grupo" type="string">
+            <column name="grupo" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>
